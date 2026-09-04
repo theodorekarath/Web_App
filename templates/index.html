@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Handwritten Digit Recognizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <main>
+      <h1>Draw a Digit (0-9)</h1>
+      <canvas id="drawing-canvas" width="700" height="700" aria-label="Drawing area"></canvas>
+      <div class="actions">
+        <button id="predict-button" type="button">Predict</button>
+        <button id="clear-button" type="button">Clear</button>
+      </div>
+      <p id="result" aria-live="polite"></p>
+    </main>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

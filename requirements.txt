@@ -1,0 +1,7 @@
+Flask>=3.0
+numpy>=1.24
+pillow>=9.5
+torch
+torchvision
+pytest>=7.2
+playwright>=1.45
